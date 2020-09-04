@@ -84,7 +84,7 @@ containerTemplate(name: 'kubectl', image: 'roffe/kubectl', command: 'cat', ttyEn
 
 	} catch(e) {
 		// Slack - 빌드 실패시
-
+		notifySlack("FAILED", "#FF0000")
 	}
   }
 }
